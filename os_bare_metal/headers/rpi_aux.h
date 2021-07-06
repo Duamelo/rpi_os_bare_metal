@@ -1,0 +1,3 @@
+
+
+#define AUX_BASE  ( PERIPHERAL_BASE + 0x215000 )

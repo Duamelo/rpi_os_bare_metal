@@ -1,0 +1,23 @@
+Start testing: Jun 26 23:26 CEST
+----------------------------------------------------------
+1/1 Testing: test_average_three_integer
+1/1 Test: test_average_three_integer
+Command: "/home/franck/Documents/memoire/build/os_bare_metal/tests/t_aver"
+Directory: /home/franck/Documents/memoire/build/os_bare_metal/tests
+"test_average_three_integer" start time: Jun 26 23:26 CEST
+Output:
+----------------------------------------------------------
+/home/franck/Documents/memoire/os_bare_metal/tests/test_average.c:15:here_write_your_first_test:FAIL: Expected 40 Was 23
+
+-----------------------
+1 Tests 1 Failures 0 Ignored 
+FAIL
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"test_average_three_integer" end time: Jun 26 23:26 CEST
+"test_average_three_integer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 26 23:26 CEST
