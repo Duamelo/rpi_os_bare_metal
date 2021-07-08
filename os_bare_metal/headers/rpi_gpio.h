@@ -1,7 +1,7 @@
 #include "rpi_base.h"
 
 
-#define GPIO_BASE  ( PERIPHERAL_BASE + 0x200000)
+#define GPIO_BASE  ( PERIPHERAL_BASE + 0x200000UL)
 #define FS_MASK (7)
 
 
@@ -95,8 +95,8 @@ typedef struct {
     rpi_reg_wo_t    GPCLR0;
     rpi_reg_wo_t    GPCLR1;
     rpi_reg_ro_t    Reserved2;
-    rpi_reg_wo_t    GPLEV0;
-    rpi_reg_wo_t    GPLEV1;
+    rpi_reg_ro_t    GPLEV0;
+    rpi_reg_ro_t    GPLEV1;
     rpi_reg_ro_t    Reserved3;
     rpi_reg_wo_t    GPEDS0;
     rpi_reg_wo_t    GPEDS1;
@@ -129,8 +129,6 @@ typedef struct {
 typedef enum {
     RPI_IO_LO = 0,
     RPI_IO_HI,
-    RPI_IO_ON,
-    RPI_IO_OFF,
     RPI_IO_UNKNOWN,
 } gpio_value_t;
 
@@ -140,7 +138,7 @@ extern gpio_t* get_gpio(void);
 extern void set_gpio_pin_function( gpio_pin_t gpio, gpio_alt_function_t func );
 extern void set_gpio_output( gpio_pin_t gpio );
 extern void set_gpio_input( gpio_pin_t gpio );
-extern gpio_value_t get_gpio_value( gpio_pin_t gpio );
+extern gpio_value_t get_gpio_value( gpio_pin_t* gpio );
 extern void set_gpio_hi( gpio_pin_t gpio );
 extern void set_gpio_lo( gpio_pin_t gpio );
 

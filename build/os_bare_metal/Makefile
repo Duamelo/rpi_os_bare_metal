@@ -122,46 +122,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-os_bare_metal/CMakeFiles/average.dir/rule:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/CMakeFiles/average.dir/rule
-.PHONY : os_bare_metal/CMakeFiles/average.dir/rule
+os_bare_metal/CMakeFiles/gpio.dir/rule:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/CMakeFiles/gpio.dir/rule
+.PHONY : os_bare_metal/CMakeFiles/gpio.dir/rule
 
 # Convenience name for target.
-average: os_bare_metal/CMakeFiles/average.dir/rule
+gpio: os_bare_metal/CMakeFiles/gpio.dir/rule
 
-.PHONY : average
+.PHONY : gpio
 
 # fast build rule for target.
-average/fast:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/build
-.PHONY : average/fast
+gpio/fast:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/build
+.PHONY : gpio/fast
 
-src/average.o: src/average.c.o
+src/gpio.o: src/gpio.c.o
 
-.PHONY : src/average.o
+.PHONY : src/gpio.o
 
 # target to build an object file
-src/average.c.o:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/src/average.c.o
-.PHONY : src/average.c.o
+src/gpio.c.o:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/src/gpio.c.o
+.PHONY : src/gpio.c.o
 
-src/average.i: src/average.c.i
+src/gpio.i: src/gpio.c.i
 
-.PHONY : src/average.i
+.PHONY : src/gpio.i
 
 # target to preprocess a source file
-src/average.c.i:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/src/average.c.i
-.PHONY : src/average.c.i
+src/gpio.c.i:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/src/gpio.c.i
+.PHONY : src/gpio.c.i
 
-src/average.s: src/average.c.s
+src/gpio.s: src/gpio.c.s
 
-.PHONY : src/average.s
+.PHONY : src/gpio.s
 
 # target to generate assembly for a file
-src/average.c.s:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/src/average.c.s
-.PHONY : src/average.c.s
+src/gpio.c.s:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/src/gpio.c.s
+.PHONY : src/gpio.c.s
 
 # Help Target
 help:
@@ -172,10 +172,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... average"
-	@echo "... src/average.o"
-	@echo "... src/average.i"
-	@echo "... src/average.s"
+	@echo "... gpio"
+	@echo "... src/gpio.o"
+	@echo "... src/gpio.i"
+	@echo "... src/gpio.s"
 .PHONY : help
 
 

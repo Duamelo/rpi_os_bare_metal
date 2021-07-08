@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/t_aver.dir/test_average.c.o CMakeFiles/t_aver.dir/__/src/average.c.o  -o t_aver   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lunity 

@@ -1,23 +1,44 @@
-Start testing: Jun 26 23:26 CEST
+Start testing: Jul 08 19:17 CEST
 ----------------------------------------------------------
-1/1 Testing: test_average_three_integer
-1/1 Test: test_average_three_integer
-Command: "/home/franck/Documents/memoire/build/os_bare_metal/tests/t_aver"
+1/2 Testing: test_gpio_value
+1/2 Test: test_gpio_value
+Command: "/home/franck/Documents/memoire/build/os_bare_metal/tests/tgpio"
 Directory: /home/franck/Documents/memoire/build/os_bare_metal/tests
-"test_average_three_integer" start time: Jun 26 23:26 CEST
+"test_gpio_value" start time: Jul 08 19:17 CEST
 Output:
 ----------------------------------------------------------
-/home/franck/Documents/memoire/os_bare_metal/tests/test_average.c:15:here_write_your_first_test:FAIL: Expected 40 Was 23
+/home/franck/Documents/memoire/os_bare_metal/tests/test_gpio.c:45:test_gpio_value:PASS
 
 -----------------------
-1 Tests 1 Failures 0 Ignored 
-FAIL
+1 Tests 0 Failures 0 Ignored 
+OK
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"test_average_three_integer" end time: Jun 26 23:26 CEST
-"test_average_three_integer" time elapsed: 00:00:00
+Test Passed.
+"test_gpio_value" end time: Jul 08 19:17 CEST
+"test_gpio_value" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 26 23:26 CEST
+2/2 Testing: test_gpio_high
+2/2 Test: test_gpio_high
+Command: "/home/franck/Documents/memoire/build/os_bare_metal/tests/tgpiohi"
+Directory: /home/franck/Documents/memoire/build/os_bare_metal/tests
+"test_gpio_high" start time: Jul 08 19:17 CEST
+Output:
+----------------------------------------------------------
+/home/franck/Documents/memoire/os_bare_metal/tests/test_gpio.c:53:test_gpio_value:PASS
+/home/franck/Documents/memoire/os_bare_metal/tests/test_gpio.c:54:test_gpio_high:PASS
+
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_gpio_high" end time: Jul 08 19:17 CEST
+"test_gpio_high" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 08 19:17 CEST

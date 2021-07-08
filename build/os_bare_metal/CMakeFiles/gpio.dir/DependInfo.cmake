@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/franck/Documents/memoire/os_bare_metal/src/average.c" "/home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/t_aver.dir/__/src/average.c.o"
-  "/home/franck/Documents/memoire/os_bare_metal/tests/test_average.c" "/home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/t_aver.dir/test_average.c.o"
+  "/home/franck/Documents/memoire/os_bare_metal/src/gpio.c" "/home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/gpio.dir/src/gpio.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

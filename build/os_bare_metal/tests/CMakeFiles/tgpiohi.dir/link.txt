@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/tgpiohi.dir/test_gpio.c.o CMakeFiles/tgpiohi.dir/__/src/gpio.c.o  -o tgpiohi   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lunity 

@@ -32,8 +32,9 @@
 /home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/rebuild_cache.dir
 /home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/edit_cache.dir
 /home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/test.dir
-/home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/average.dir
+/home/franck/Documents/memoire/build/os_bare_metal/CMakeFiles/gpio.dir
 /home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/rebuild_cache.dir
 /home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/edit_cache.dir
 /home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/test.dir
-/home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/t_aver.dir
+/home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/tgpiohi.dir
+/home/franck/Documents/memoire/build/os_bare_metal/tests/CMakeFiles/tgpio.dir

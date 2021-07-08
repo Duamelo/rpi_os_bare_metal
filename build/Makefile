@@ -486,30 +486,43 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named average
+# Target rules for targets named gpio
 
 # Build rule for target.
-average: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 average
-.PHONY : average
+gpio: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gpio
+.PHONY : gpio
 
 # fast build rule for target.
-average/fast:
-	$(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/build
-.PHONY : average/fast
+gpio/fast:
+	$(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/build
+.PHONY : gpio/fast
 
 #=============================================================================
-# Target rules for targets named t_aver
+# Target rules for targets named tgpiohi
 
 # Build rule for target.
-t_aver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 t_aver
-.PHONY : t_aver
+tgpiohi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tgpiohi
+.PHONY : tgpiohi
 
 # fast build rule for target.
-t_aver/fast:
-	$(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/build
-.PHONY : t_aver/fast
+tgpiohi/fast:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build
+.PHONY : tgpiohi/fast
+
+#=============================================================================
+# Target rules for targets named tgpio
+
+# Build rule for target.
+tgpio: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tgpio
+.PHONY : tgpio
+
+# fast build rule for target.
+tgpio/fast:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/build
+.PHONY : tgpio/fast
 
 # Help Target
 help:
@@ -548,8 +561,9 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... average"
-	@echo "... t_aver"
+	@echo "... gpio"
+	@echo "... tgpiohi"
+	@echo "... tgpio"
 .PHONY : help
 
 

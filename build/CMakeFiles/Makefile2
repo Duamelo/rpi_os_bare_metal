@@ -99,7 +99,7 @@ clean: os_bare_metal/clean
 # Directory level rules for directory os_bare_metal
 
 # Recursive "all" directory target.
-os_bare_metal/all: os_bare_metal/CMakeFiles/average.dir/all
+os_bare_metal/all: os_bare_metal/CMakeFiles/gpio.dir/all
 os_bare_metal/all: os_bare_metal/tests/all
 
 .PHONY : os_bare_metal/all
@@ -110,7 +110,7 @@ os_bare_metal/preinstall: os_bare_metal/tests/preinstall
 .PHONY : os_bare_metal/preinstall
 
 # Recursive "clean" directory target.
-os_bare_metal/clean: os_bare_metal/CMakeFiles/average.dir/clean
+os_bare_metal/clean: os_bare_metal/CMakeFiles/gpio.dir/clean
 os_bare_metal/clean: os_bare_metal/tests/clean
 
 .PHONY : os_bare_metal/clean
@@ -129,7 +129,8 @@ os_bare_metal/tests/preinstall:
 .PHONY : os_bare_metal/tests/preinstall
 
 # Recursive "clean" directory target.
-os_bare_metal/tests/clean: os_bare_metal/tests/CMakeFiles/t_aver.dir/clean
+os_bare_metal/tests/clean: os_bare_metal/tests/CMakeFiles/tgpiohi.dir/clean
+os_bare_metal/tests/clean: os_bare_metal/tests/CMakeFiles/tgpio.dir/clean
 
 .PHONY : os_bare_metal/tests/clean
 
@@ -890,58 +891,85 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target os_bare_metal/CMakeFiles/average.dir
+# Target rules for target os_bare_metal/CMakeFiles/gpio.dir
 
 # All Build rule for target.
-os_bare_metal/CMakeFiles/average.dir/all:
-	$(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/depend
-	$(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/franck/Documents/memoire/build/CMakeFiles --progress-num=1 "Built target average"
-.PHONY : os_bare_metal/CMakeFiles/average.dir/all
+os_bare_metal/CMakeFiles/gpio.dir/all:
+	$(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/depend
+	$(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/franck/Documents/memoire/build/CMakeFiles --progress-num=1 "Built target gpio"
+.PHONY : os_bare_metal/CMakeFiles/gpio.dir/all
 
 # Build rule for subdir invocation for target.
-os_bare_metal/CMakeFiles/average.dir/rule: cmake_check_build_system
+os_bare_metal/CMakeFiles/gpio.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/CMakeFiles/average.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/CMakeFiles/gpio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 0
-.PHONY : os_bare_metal/CMakeFiles/average.dir/rule
+.PHONY : os_bare_metal/CMakeFiles/gpio.dir/rule
 
 # Convenience name for target.
-average: os_bare_metal/CMakeFiles/average.dir/rule
+gpio: os_bare_metal/CMakeFiles/gpio.dir/rule
 
-.PHONY : average
+.PHONY : gpio
 
 # clean rule for target.
-os_bare_metal/CMakeFiles/average.dir/clean:
-	$(MAKE) -f os_bare_metal/CMakeFiles/average.dir/build.make os_bare_metal/CMakeFiles/average.dir/clean
-.PHONY : os_bare_metal/CMakeFiles/average.dir/clean
+os_bare_metal/CMakeFiles/gpio.dir/clean:
+	$(MAKE) -f os_bare_metal/CMakeFiles/gpio.dir/build.make os_bare_metal/CMakeFiles/gpio.dir/clean
+.PHONY : os_bare_metal/CMakeFiles/gpio.dir/clean
 
 #=============================================================================
-# Target rules for target os_bare_metal/tests/CMakeFiles/t_aver.dir
+# Target rules for target os_bare_metal/tests/CMakeFiles/tgpiohi.dir
 
 # All Build rule for target.
-os_bare_metal/tests/CMakeFiles/t_aver.dir/all:
-	$(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/depend
-	$(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/franck/Documents/memoire/build/CMakeFiles --progress-num=2,3,4 "Built target t_aver"
-.PHONY : os_bare_metal/tests/CMakeFiles/t_aver.dir/all
+os_bare_metal/tests/CMakeFiles/tgpiohi.dir/all:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/depend
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/franck/Documents/memoire/build/CMakeFiles --progress-num=5,6,7 "Built target tgpiohi"
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpiohi.dir/all
 
 # Build rule for subdir invocation for target.
-os_bare_metal/tests/CMakeFiles/t_aver.dir/rule: cmake_check_build_system
+os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/t_aver.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/tgpiohi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 0
-.PHONY : os_bare_metal/tests/CMakeFiles/t_aver.dir/rule
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule
 
 # Convenience name for target.
-t_aver: os_bare_metal/tests/CMakeFiles/t_aver.dir/rule
+tgpiohi: os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule
 
-.PHONY : t_aver
+.PHONY : tgpiohi
 
 # clean rule for target.
-os_bare_metal/tests/CMakeFiles/t_aver.dir/clean:
-	$(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/clean
-.PHONY : os_bare_metal/tests/CMakeFiles/t_aver.dir/clean
+os_bare_metal/tests/CMakeFiles/tgpiohi.dir/clean:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/clean
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpiohi.dir/clean
+
+#=============================================================================
+# Target rules for target os_bare_metal/tests/CMakeFiles/tgpio.dir
+
+# All Build rule for target.
+os_bare_metal/tests/CMakeFiles/tgpio.dir/all:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/depend
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/franck/Documents/memoire/build/CMakeFiles --progress-num=2,3,4 "Built target tgpio"
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpio.dir/all
+
+# Build rule for subdir invocation for target.
+os_bare_metal/tests/CMakeFiles/tgpio.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/tgpio.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franck/Documents/memoire/build/CMakeFiles 0
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpio.dir/rule
+
+# Convenience name for target.
+tgpio: os_bare_metal/tests/CMakeFiles/tgpio.dir/rule
+
+.PHONY : tgpio
+
+# clean rule for target.
+os_bare_metal/tests/CMakeFiles/tgpio.dir/clean:
+	$(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/clean
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpio.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

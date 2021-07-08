@@ -122,73 +122,94 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-os_bare_metal/tests/CMakeFiles/t_aver.dir/rule:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/t_aver.dir/rule
-.PHONY : os_bare_metal/tests/CMakeFiles/t_aver.dir/rule
+os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule
 
 # Convenience name for target.
-t_aver: os_bare_metal/tests/CMakeFiles/t_aver.dir/rule
+tgpiohi: os_bare_metal/tests/CMakeFiles/tgpiohi.dir/rule
 
-.PHONY : t_aver
+.PHONY : tgpiohi
 
 # fast build rule for target.
-t_aver/fast:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/build
-.PHONY : t_aver/fast
+tgpiohi/fast:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build
+.PHONY : tgpiohi/fast
 
-__/src/average.o: __/src/average.c.o
+# Convenience name for target.
+os_bare_metal/tests/CMakeFiles/tgpio.dir/rule:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f CMakeFiles/Makefile2 os_bare_metal/tests/CMakeFiles/tgpio.dir/rule
+.PHONY : os_bare_metal/tests/CMakeFiles/tgpio.dir/rule
 
-.PHONY : __/src/average.o
+# Convenience name for target.
+tgpio: os_bare_metal/tests/CMakeFiles/tgpio.dir/rule
 
-# target to build an object file
-__/src/average.c.o:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/__/src/average.c.o
-.PHONY : __/src/average.c.o
+.PHONY : tgpio
 
-__/src/average.i: __/src/average.c.i
+# fast build rule for target.
+tgpio/fast:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/build
+.PHONY : tgpio/fast
 
-.PHONY : __/src/average.i
+__/src/gpio.o: __/src/gpio.c.o
 
-# target to preprocess a source file
-__/src/average.c.i:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/__/src/average.c.i
-.PHONY : __/src/average.c.i
-
-__/src/average.s: __/src/average.c.s
-
-.PHONY : __/src/average.s
-
-# target to generate assembly for a file
-__/src/average.c.s:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/__/src/average.c.s
-.PHONY : __/src/average.c.s
-
-test_average.o: test_average.c.o
-
-.PHONY : test_average.o
+.PHONY : __/src/gpio.o
 
 # target to build an object file
-test_average.c.o:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/test_average.c.o
-.PHONY : test_average.c.o
+__/src/gpio.c.o:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/__/src/gpio.c.o
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/__/src/gpio.c.o
+.PHONY : __/src/gpio.c.o
 
-test_average.i: test_average.c.i
+__/src/gpio.i: __/src/gpio.c.i
 
-.PHONY : test_average.i
+.PHONY : __/src/gpio.i
 
 # target to preprocess a source file
-test_average.c.i:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/test_average.c.i
-.PHONY : test_average.c.i
+__/src/gpio.c.i:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/__/src/gpio.c.i
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/__/src/gpio.c.i
+.PHONY : __/src/gpio.c.i
 
-test_average.s: test_average.c.s
+__/src/gpio.s: __/src/gpio.c.s
 
-.PHONY : test_average.s
+.PHONY : __/src/gpio.s
 
 # target to generate assembly for a file
-test_average.c.s:
-	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/t_aver.dir/build.make os_bare_metal/tests/CMakeFiles/t_aver.dir/test_average.c.s
-.PHONY : test_average.c.s
+__/src/gpio.c.s:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/__/src/gpio.c.s
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/__/src/gpio.c.s
+.PHONY : __/src/gpio.c.s
+
+test_gpio.o: test_gpio.c.o
+
+.PHONY : test_gpio.o
+
+# target to build an object file
+test_gpio.c.o:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/test_gpio.c.o
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/test_gpio.c.o
+.PHONY : test_gpio.c.o
+
+test_gpio.i: test_gpio.c.i
+
+.PHONY : test_gpio.i
+
+# target to preprocess a source file
+test_gpio.c.i:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/test_gpio.c.i
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/test_gpio.c.i
+.PHONY : test_gpio.c.i
+
+test_gpio.s: test_gpio.c.s
+
+.PHONY : test_gpio.s
+
+# target to generate assembly for a file
+test_gpio.c.s:
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpiohi.dir/build.make os_bare_metal/tests/CMakeFiles/tgpiohi.dir/test_gpio.c.s
+	cd /home/franck/Documents/memoire/build && $(MAKE) -f os_bare_metal/tests/CMakeFiles/tgpio.dir/build.make os_bare_metal/tests/CMakeFiles/tgpio.dir/test_gpio.c.s
+.PHONY : test_gpio.c.s
 
 # Help Target
 help:
@@ -199,13 +220,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... t_aver"
-	@echo "... __/src/average.o"
-	@echo "... __/src/average.i"
-	@echo "... __/src/average.s"
-	@echo "... test_average.o"
-	@echo "... test_average.i"
-	@echo "... test_average.s"
+	@echo "... tgpiohi"
+	@echo "... tgpio"
+	@echo "... __/src/gpio.o"
+	@echo "... __/src/gpio.i"
+	@echo "... __/src/gpio.s"
+	@echo "... test_gpio.o"
+	@echo "... test_gpio.i"
+	@echo "... test_gpio.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 
-
-#define PERIPHERAL_BASE  0x3F000000
+#include<stdint.h>
+#define PERIPHERAL_BASE  0x3F000000UL
 
 
 
