@@ -1,1 +1,1 @@
-### mini système d'exploitation à ordonnancement coopértif pour raspberry 3 model b+
+### mini système d'exploitation à ordonnancement coopératif pour raspberry 3 model b+
