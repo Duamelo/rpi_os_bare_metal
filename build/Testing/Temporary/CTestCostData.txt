@@ -1,3 +1,0 @@
-test_gpio_value 3 0.000471039
-test_gpio_high 1 0.00144274
----
